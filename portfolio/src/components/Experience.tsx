@@ -1,28 +1,27 @@
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
 
 export const Experience = () => {
     const experiences = [
         {
             role: 'Senior Data Engineer',
             company: 'Piraeus Bank',
-            period: '2023 - Present', // Estimated start based on "Senior" title, user to verify
-            desc: 'Architecting and maintaining enterprise-grade data platforms. Leveraging Azure and Databricks to drive digital transformation and enable data-driven decision making.',
-            logo: 'https://logo.clearbit.com/piraeusbank.gr',
+            period: '2024 - Present',
+            desc: "Created and managed a central repository from scratch, unifying many of the bank's internal data sources from different divisions into Azure Databricks, creating a one stop shop for all things related to Data Science projects & Analytics. Leveraging Azure and Databricks to drive digital transformation and enable data-driven decision making.",
+            logo: '/logos/piraeus_favicon.ico',
         },
         {
             role: 'Data Engineer',
             company: 'PPC S.A (ΔΕΗ)',
-            period: '2019 - 2023', // Estimated, user to verify
+            period: '2023 - 2024',
             desc: 'Contributed to research projects involving Big Data, Machine Learning, and AI. Built data processing pipelines for scientific datasets.',
-            logo: 'https://logo.clearbit.com/demokritos.gr',
+            logo: '/logos/ppc.png',
         },
         {
             role: 'Digital Marketing Analyst',
             company: 'WIND Hellas (now NOVA)',
-            period: '2017 - 2019',
+            period: '2020 - 2022',
             desc: 'Developed and maintained large-scale data ingestion systems. Optimized SQL queries for performance improvements by 40%.',
-            logo: '', // Placeholder
+            logo: '/logos/wind.jpg',
         }
     ];
 
@@ -50,28 +49,20 @@ export const Experience = () => {
                             transition={{ duration: 0.5, delay: idx * 0.2 }}
                             className="relative pl-8 md:pl-12"
                         >
-                            <div className="absolute -left-3 top-0 bg-background p-1">
-                                <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-full text-white shadow-lg shadow-primary/20">
-                                    <Briefcase size={16} />
+                            <div className="absolute -left-6 top-0 bg-background p-1 rounded-full">
+                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-gray-800 shadow-lg shadow-primary/20 overflow-hidden">
+                                    <img
+                                        src={exp.logo}
+                                        alt={`${exp.company} logo`}
+                                        className="w-8 h-8 object-contain"
+                                    />
                                 </div>
                             </div>
 
                             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-                                <div className="flex items-center gap-4">
-                                    {exp.logo && (
-                                        <img
-                                            src={exp.logo}
-                                            alt={`${exp.company} logo`}
-                                            className="w-12 h-12 rounded-lg bg-white object-contain p-1"
-                                            onError={(e) => {
-                                                (e.target as HTMLImageElement).style.display = 'none';
-                                            }}
-                                        />
-                                    )}
-                                    <div>
-                                        <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                                        <h4 className="text-lg text-gray-400">{exp.company}</h4>
-                                    </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+                                    <h4 className="text-lg text-gray-400">{exp.company}</h4>
                                 </div>
                                 <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0 whitespace-nowrap">
                                     {exp.period}
