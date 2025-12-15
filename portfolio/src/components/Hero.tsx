@@ -22,7 +22,7 @@ export const Hero = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <span className="text-primary font-semibold tracking-wider text-lg">
-                            Hi, I'm Ilias Giannakos, a Senior Data Engineer
+                            Hi, I'm Ilias Giannakos, a Senior Data & Software Engineer
                         </span>
                     </motion.div>
 
@@ -32,9 +32,9 @@ export const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-5xl md:text-7xl font-bold mt-4 mb-6 leading-tight text-white"
                     >
-                        Helping Organizations<br />
+                        Helping organizations<br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                            trust their data and make actionable decisions
+                            trust their data & make better decisions
                         </span>
                     </motion.h1>
 
@@ -44,7 +44,7 @@ export const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-gray-400 text-lg mb-8 max-w-lg"
                     >
-                        I specialize in transforming complex data into actionable insights using Databricks, Azure, and modern Big Data technologies.
+                        I specialize in transforming complex data from many different data sources into actionable insights using state of the art technologies like Databricks, Azure, and other technologies.
                     </motion.p>
 
                     <motion.div

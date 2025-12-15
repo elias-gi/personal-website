@@ -1,29 +1,28 @@
-
 import { motion } from 'framer-motion';
-import { Network, Code2, Briefcase, Database } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 export const Experience = () => {
     const experiences = [
         {
             role: 'Senior Data Engineer',
-            company: 'DataTech Solutions [Placeholder]',
-            period: '2022 - Present',
-            desc: 'Leading the migration of legacy data warehouses to Databricks Lakehouse. Designing automated ETL pipelines using PySpark and Azure Data Factory. Mentoring junior engineers.',
-            icon: <Network />,
+            company: 'Piraeus Bank',
+            period: '2023 - Present', // Estimated start based on "Senior" title, user to verify
+            desc: 'Architecting and maintaining enterprise-grade data platforms. Leveraging Azure and Databricks to drive digital transformation and enable data-driven decision making.',
+            logo: 'https://logo.clearbit.com/piraeusbank.gr',
         },
         {
             role: 'Data Engineer',
-            company: 'Cloud Systems Inc. [Placeholder]',
-            period: '2019 - 2022',
-            desc: 'Developed and maintained large-scale data ingestion systems. Optimized SQL queries for performance improvements by 40%. Implemented CI/CD workflows for data pipelines.',
-            icon: <Database />,
+            company: 'PPC S.A (ΔΕΗ)',
+            period: '2019 - 2023', // Estimated, user to verify
+            desc: 'Contributed to research projects involving Big Data, Machine Learning, and AI. Built data processing pipelines for scientific datasets.',
+            logo: 'https://logo.clearbit.com/demokritos.gr',
         },
         {
-            role: 'Software Engineer',
-            company: 'Tech Innovators [Placeholder]',
+            role: 'Digital Marketing Analyst',
+            company: 'WIND Hellas (now NOVA)',
             period: '2017 - 2019',
-            desc: 'Built backend services and APIs for real-time data processing. Collaborated with data scientists to productize machine learning models.',
-            icon: <Code2 />,
+            desc: 'Developed and maintained large-scale data ingestion systems. Optimized SQL queries for performance improvements by 40%.',
+            logo: '', // Placeholder
         }
     ];
 
@@ -57,13 +56,27 @@ export const Experience = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                                <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">
+                            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                                <div className="flex items-center gap-4">
+                                    {exp.logo && (
+                                        <img
+                                            src={exp.logo}
+                                            alt={`${exp.company} logo`}
+                                            className="w-12 h-12 rounded-lg bg-white object-contain p-1"
+                                            onError={(e) => {
+                                                (e.target as HTMLImageElement).style.display = 'none';
+                                            }}
+                                        />
+                                    )}
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+                                        <h4 className="text-lg text-gray-400">{exp.company}</h4>
+                                    </div>
+                                </div>
+                                <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0 whitespace-nowrap">
                                     {exp.period}
                                 </span>
                             </div>
-                            <h4 className="text-lg text-gray-400 mb-3">{exp.company}</h4>
                             <p className="text-gray-400 leading-relaxed">
                                 {exp.desc}
                             </p>

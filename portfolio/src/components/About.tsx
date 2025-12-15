@@ -49,12 +49,14 @@ export const About = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            I am a Senior Data Engineer based in Greece, specializing in building robust data platforms and scalable architectures.
-                            My journey in tech involves deeply understanding the entire data lifecycle—from ingestion to actionable insights.
+                            I am a Senior Data Engineer based in Greece, specializing in building robust data platforms.
+                        </p>
+                        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                            Data Engineering is not just moving data from A to B—it's about owning the entire data infrastructure enabling an organization to own and trust their data.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            With extensive experience in Databricks and Azure, I bridge the gap between complex data problems and efficient operational solutions.
-                            I am passionate about automating workflows, optimizing performance, and implementing reliable CI/CD pipelines.
+                            With more than 5 years of experience in Databricks and Azure, I prioritize data validation, lineage, and governance.
+                            I bridge the gap between complexity and efficiency, ensuring reliable and trustworthy insights.
                         </p>
                     </motion.div>
 
