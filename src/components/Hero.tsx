@@ -55,10 +55,10 @@ export const Hero = () => {
                         className="flex flex-wrap gap-4"
                     >
                         <a
-                            href="#projects"
+                            href="#experience"
                             className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all flex items-center gap-2"
                         >
-                            View Projects <ArrowRight size={18} />
+                            View Experience <ArrowRight size={18} />
                         </a>
                         <a
                             href="#contact"
