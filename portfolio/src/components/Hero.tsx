@@ -20,6 +20,7 @@ export const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
+                        className="mb-16"
                     >
                         <span className="text-primary font-semibold tracking-wider text-lg">
                             Hi, I'm Ilias Giannakos, a Senior Data & Software Engineer

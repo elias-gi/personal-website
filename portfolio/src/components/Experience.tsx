@@ -37,6 +37,9 @@ export const Experience = () => {
                 >
                     <span className="text-accent font-semibold uppercase tracking-wider text-sm">Career Path</span>
                     <h2 className="text-4xl font-bold mt-2 text-white">Professional Experience</h2>
+                    <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+                        After being part of some of the largest corporations in Greece, I can effectively plan & build scalable solutions for any type of business.
+                    </p>
                 </motion.div>
 
                 <div className="relative border-l border-gray-800 ml-3 md:ml-6 space-y-12">

@@ -29,7 +29,7 @@ const Navbar = () => {
         >
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                 <a href="#" className="font-bold text-xl tracking-tighter text-white">
-                    ILIAS<span className="text-primary">.</span>DEV
+                    Ilias<span className="text-primary">.</span>Dev
                 </a>
 
                 {/* Desktop Menu */}
@@ -98,13 +98,13 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="flex space-x-6">
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://github.com/elias-gi" className="text-gray-400 hover:text-white transition-colors">
                         <Github size={20} />
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://www.linkedin.com/in/ilias-giannakos/" className="text-gray-400 hover:text-white transition-colors">
                         <Linkedin size={20} />
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="mailto:ilias.giannakos@outlook.com" className="text-gray-400 hover:text-white transition-colors">
                         <Mail size={20} />
                     </a>
                 </div>
