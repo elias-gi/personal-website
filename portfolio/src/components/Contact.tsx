@@ -48,7 +48,7 @@ export const Contact = () => {
                     <span className="text-secondary font-semibold uppercase tracking-wider text-sm">Get in Touch</span>
                     <h2 className="text-4xl font-bold mt-2 text-white">Let's Work Together</h2>
                     <p className="text-gray-400 mt-4 max-w-xl mx-auto">
-                        Whether you have a question about my work, a project proposal, or just want to say hi, feel free to reach out.
+                        Whether you have a project proposal, a question about my work, or just want to say hi, feel free to reach out.
                     </p>
                 </motion.div>
 

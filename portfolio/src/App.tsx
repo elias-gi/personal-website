@@ -41,7 +41,7 @@ function App() {
         </div>
         <About />
         <Experience />
-        <Projects />
+
         <Contact />
       </Layout>
     </TextCursor>
@@ -50,4 +50,5 @@ function App() {
 
 export default App;
 
-/**#image="/logos/test.png"*/
+/**#image="/logos/test.png"
+<Projects />  */
